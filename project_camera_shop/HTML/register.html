@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Prata"
+    />
+    <link rel="stylesheet" href="../CSS/register.css" />
+    <link rel="icon" href="../Media/Logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <a href="../HTML/homepage.html"
+      ><img src="../Media/Logo.png" alt="Logo" id="logo"
+    /></a>
+    <div class="theme_container">
+      <button title="Light theme" class="fa-regular fa-sun theme"></button>
+      <button title="Dark theme" class="fa-regular fa-moon theme"></button>
+    </div>
+    <div class="container">
+      <form
+        id="form"
+        action="../HTML/homepage.html"
+        onsubmit="return(validatefName() 
+          && validatelName() 
+          && validateEmail() 
+          && validatePassword() 
+          && validatePassword2() 
+          && validateCheckbox())"
+      >
+        <h2>Register</h2>
+        <label for="fname"></label>
+        <input type="text" id="fname" name="fname" placeholder="First name" />
+        <br />
+        <h4
+          id="error1"
+          style="font-size: x-small; margin-left: 0.1rem; color: #55d7f8"
+        ></h4>
+        <label for="lname"></label>
+        <input type="text" id="lname" name="lname" placeholder="Last name" />
+        <br />
+        <h4
+          id="error2"
+          style="font-size: x-small; margin-left: 0.1rem; color: #55d7f8"
+        ></h4>
+        <label for="email"></label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+        />
+        <br />
+        <h4
+          id="error3"
+          style="font-size: x-small; margin-left: 0.1rem; color: #55d7f8"
+        ></h4>
+        <label for="Password"></label>
+        <input
+          type="Password"
+          id="Password"
+          name="Password"
+          placeholder="Create password"
+        />
+        <br />
+        <h4
+          id="error4"
+          style="font-size: x-small; margin-left: 0.1rem; color: #55d7f8"
+        ></h4>
+        <label for="CPassword"></label>
+        <input
+          type="Password"
+          id="CPassword"
+          name="CPassword"
+          placeholder="Confirm password"
+        />
+        <br />
+        <h4
+          id="error5"
+          style="font-size: x-small; margin-left: 0.1rem; color: #55d7f8"
+        ></h4>
+        <input type="checkbox" name="check" id="checkbox" placeholder="check" />
+        <br />
+        <h4 id="terms">
+          By clicking this you agree <br />
+          to our Terms and Conditions
+        </h4>
+        <h4
+          id="error6"
+          style="
+            font-size: x-small;
+            margin-left: 0.1rem;
+            margin-top: 1.5rem;
+            color: #55d7f8;
+          "
+        ></h4>
+        <br />
+        <h5>Or Sign up using</h5>
+        <button
+          type="button"
+          class="fa-brands fa-facebook-f signin"
+          title="facebook"
+        ></button>
+        <button
+          type="button"
+          class="fa-brands fa-google signin"
+          title="google"
+        ></button>
+        <button type="submit" id="button">Sign Up</button>
+        <br />
+        <h3>
+          Already have an account? <br /><a href="../HTML/login.html"
+            >Sign in here</a
+          >
+        </h3>
+      </form>
+    </div>
+    <!-- <img src="../Media/ufo.png" alt="Logo" id="ufo" /> -->
+    <div id="chat">
+      <section id="text-input"></section>
+      <input
+        type="text"
+        name="questions"
+        id="questions"
+        placeholder="Ask us anything"
+      />
+    </div>
+    <script src="../JS/register.js"></script>
+  </body>
+</html>

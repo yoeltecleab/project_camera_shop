@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Prata"
+    />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="icon" href="../Media/Logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <a href="../HTML/homepage.html"
+      ><img src="../Media/Logo.png" alt="Logo" id="logo"
+    /></a>
+    <div class="theme_container">
+      <button title="Light theme" class="fa-regular fa-sun theme"></button>
+      <button title="Dark theme" class="fa-regular fa-moon theme"></button>
+    </div>
+    <div class="container">
+      <form
+        id="form"
+        action="../HTML/homepage.html"
+        onsubmit="return(validateEmail() 
+      && validatePassword())"
+      >
+        <h2>Login</h2>
+        <label for="email"></label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+        />
+        <br />
+        <h4
+          id="error1"
+          style="font-size: x-small; margin-left: 0.1rem; color: #55d7f8"
+        ></h4>
+        <label for="Password"></label>
+        <input
+          type="Password"
+          id="Password"
+          name="Password"
+          placeholder="Password"
+        />
+        <br />
+        <h4
+          id="error2"
+          style="font-size: x-small; margin-left: 0.1rem; color: #55d7f8"
+        ></h4>
+        <h5>Or Sign in using</h5>
+        <button
+          type="button"
+          class="fa-brands fa-facebook-f signin"
+          title="facebook"
+        ></button>
+        <button
+          type="button"
+          class="fa-brands fa-google signin"
+          title="google"
+        ></button>
+        <button type="submit" id="button">Sign Up</button>
+        <br />
+        <h3>
+          New User? <br /><a href="../HTML/register.html">Sign up here</a>
+        </h3>
+      </form>
+    </div>
+    <!-- <img src="../Media/ufo.png" alt="Logo" id="ufo" /> -->
+    <div id="chat">
+      <section id="text-input"></section>
+      <input
+        type="text"
+        name="questions"
+        id="questions"
+        placeholder="Ask us anything"
+      />
+    </div>
+    <script src="../JS/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+:root {
+  --background-color: ;
+  --base-color: ;
+  --alt-color: ;
+  --hover-color: ;
+}
+body {
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(../Media/Background_Dark.jpg);
+  background-size: cover;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 5fr 3fr;
+  grid-template-rows: 1fr 5fr 2fr 1fr;
+  /* grid-template-rows: 12% 65% 23%; */
+  grid-template-areas:
+    "logo name name name login"
+    "services camera lens accessories video"
+    "services camera lens accessories hours"
+    "empty about support follow news";
+  height: 100vh;
+  margin: 0.5rem;
+  gap: 0.5rem;
+  border-radius: 0.1rem;
+}
+#logo_image {
+  height: 50px;
+  width: 50px;
+}
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue; */
+}
+.name {
+  grid-area: name;
+  /* background-color: aliceblue; */
+  text-align: center;
+}
+.login {
+  grid-area: login;
+  padding-top: 1rem;
+  /* background-color: aliceblue; */
+}
+.services {
+  grid-area: services;
+  /* background-color: aliceblue; */
+}
+
+td,
+th {
+  padding: 7px;
+  text-align: center;
+  border: 3.1px dashed rgb(102, 255, 79);
+  border-radius: 2%;
+}
+
+select {
+  font-weight: bold;
+  background-color: transparent;
+  color: aliceblue;
+  margin: 1.18rem 0px 0px 1px;
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+}
+
+.table {
+  margin-top: -6rem;
+  border-collapse: collapse;
+  border-image: url(../Media/Alien_Logo.png);
+  display: flex;
+  justify-content: center;
+}
+a {
+  color: lightgreen;
+  text-decoration-line: none;
+}
+
+.news {
+  background-color: #f0f8ff0e;
+}
+
+footer {
+  background-color: #f0f8ff0e;
+}
+
+.camera {
+  grid-area: camera;
+}
+.lens {
+  grid-area: lens;
+}
+.accessories {
+  grid-area: accessories;
+}
+.news {
+  grid-area: news;
+}
+.hours {
+  grid-area: hours;
+}
+.about {
+  grid-area: about;
+}
+.support {
+  grid-area: support;
+}
+.follow {
+  align-items: center;
+}
+.empty {
+  grid-area: empty;
+}
+.video {
+  grid-area: video;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.picture {
+  height: 210px;
+  width: 210px;
+  background-color: #f0f8ff52;
+  transition: transform 1s;
+}
+
+.picture:hover {
+  transform: scale(1.05);
+}
+
+title {
+  grid-area: head;
+}
+.media:nth-child(1) {
+  grid-area: image1;
+}
+
+.media:nth-child(2) {
+  grid-area: image2;
+}
+
+.media:nth-child(3) {
+  grid-area: image3;
+}
+
+.media:nth-child(4) {
+  grid-area: image4;
+}
+li,
+p {
+  list-style: none;
+  transition: transform 1s;
+  font-size: 18px;
+}
+li:hover,
+p:hover {
+  transform: translateX(0.3rem);
+}
+
+.fa-brands {
+  margin-top: 10px;
+  position: absolute;
+  margin-top: -7rem;
+  margin-left: 5rem;
+}
